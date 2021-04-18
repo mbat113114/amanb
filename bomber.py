@@ -100,13 +100,13 @@ def do_zip_update():
     # Unzip and overwrite the current folder
 
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage("amanb was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update TBomb.")
+        mesgdcrt.FailureMessage("Unable to update amanb.")
         mesgdcrt.WarningMessage(
-            "Grab The Latest one From https://github.com/TheSpeedX/TBomb.git")
+            "Grab The Latest one From https://github.com/mbat113114/amanb")
 
     sys.exit()
 
@@ -114,8 +114,8 @@ def do_zip_update():
 def do_git_update():
     success = False
     try:
-        print(ALL_COLORS[0]+"UPDATING "+RESET_ALL, end='')
-        process = subprocess.Popen("git checkout . && git pull ",
+        print(ALL_COLORS[0]+f"{Fore.RED}UPDATING "+RESET_ALL, end='')
+        process = subprocess.Popen(f"{Fore.RED} git checkout . && git pull ",
                                    shell=True,
                                    stdout=subprocess.PIPE,
                                    stderr=subprocess.STDOUT)
@@ -131,9 +131,9 @@ def do_git_update():
     print("\n")
 
     if success:
-        mesgdcrt.SuccessMessage("TBomb was updated to the latest version")
+        mesgdcrt.SuccessMessage(f"{Fore.YELLOW} amanb was updated to the latest version")
         mesgdcrt.GeneralMessage(
-            "Please run the script again to load the latest version")
+            f"{Fore.RED} please run the script again to load the latest version")
     else:
         mesgdcrt.FailureMessage("Unable to update TBomb.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
