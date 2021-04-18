@@ -84,7 +84,7 @@ def check_intr():
         requests.get("https://motherfuckingwebsite.com")
     except Exception:
         bann_text()
-        mesgdcrt.FailureMessage("Poor internet connection detected")
+        mesgdcrt.FailureMessage(f"{Fore.RED}Poor internet connection detected")
         sys.exit(2)
 
 
@@ -100,11 +100,11 @@ def do_zip_update():
     # Unzip and overwrite the current folder
 
     if success:
-        mesgdcrt.SuccessMessage("amanb was updated to the latest version")
+        mesgdcrt.SuccessMessage(f"{Fore.GREEN}amanb was updated to the latest version")
         mesgdcrt.GeneralMessage(
-            "Please run the script again to load the latest version")
+            f"{Fore.RED}Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update amanb.")
+        mesgdcrt.FailureMessage(f"{Fore.RED}Unable to update amanb.")
         mesgdcrt.WarningMessage(
             "Grab The Latest one From https://github.com/mbat113114/amanb")
 
