@@ -21,25 +21,25 @@ detect_distro() {
 }
 
 pause() {
-    read -n1 -r -p "Press any key to continue..." key
+    read -n1 -r -p "Press any key to continue... and move to aman's hacking site key"
 }
 banner() {
     clear
     echo -e "\e[1;31m"
     if ! [ -x "$(command -v figlet)" ]; then
-        echo 'Introducing TBomb'
+        echo 'Introducing AMAN HACKING PLATFORM'
     else
         figlet TBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
-        echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSpeedX \e[0m"
+        echo -e "\e[4;34m This Bomber Was Created By \e[1;AMAN CHOUDHARY \e[0m"
     else
         echo -e "\e[1;34mCreated By \e[1;34m"
         toilet -f mono12 -F border SpeedX
     fi
     echo -e "\e[1;34m For Any Queries Join Me!!!\e[0m"
-    echo -e "\e[1;32m           Telegram: https://t.me/TBombChat \e[0m"
-    echo -e "\e[4;32m   YouTube: https://www.youtube.com/c/SpeedXTech \e[0m"
+    echo -e "\e[1;32m         \e[0m"
+    echo -e "\e[4;32m    \e[0m"
     echo " "
 
 }
@@ -81,7 +81,7 @@ install_deps(){
     else
         echo "We could not install dependencies."
         echo "Please make sure you have git, python3, pip3 and requirements installed."
-        echo "Then you can execute bomber.py ."
+        echo "Then you can execute amanb hacking tool ."
         exit
     fi
 }
@@ -126,14 +126,14 @@ do
         echo -e "\e[1;34m Downloading Latest Files..."
         rm -f .update
         $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
+        echo -e "\e[1;34m RUN amanb Again..."
         pause
         exit
     elif [ $ch -eq 5 ];then
         banner
         exit
     else
-        echo -e "\e[4;32m Invalid Input !!! \e[0m"
+        echo -e "\e[4;32m Invalid Input !!! sahi sahi likh \e[0m"
         pause
     fi
 done
