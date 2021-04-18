@@ -11,6 +11,10 @@ import json
 import re
 import time
 import argparse
+import colorama
+from colorama import Fore, Back, Style
+#color setup
+colorama.init(autoreset = True)
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -25,6 +29,7 @@ except ImportError:
     print(
         "Type `pip3 install -r requirements.txt` to "
         " install all required packages")
+    print(f"{Fore.RED} fir try karna ")    
     sys.exit(1)
 
 
@@ -57,7 +62,7 @@ def bann_text():
       ██    █████▒  ████  ███ ███ █████
       ██    ██▒▒██ ██  ██ ██▒█▒██ ██▒▒██
       ██    ██  ██ ██  ██ ██ ▒ ██ ██  ██
-      ██    █████▒ ▒████▒ ██   ██ █████▒
+      ██    █████▒ ▒████▒ ██   ██ ████▒
       ▒▒    ▒▒▒▒▒   ▒▒▒▒  ▒▒   ▒▒ ▒▒▒▒▒
                                          """
     version = "Version: "+__VERSION__
