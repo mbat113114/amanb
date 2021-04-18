@@ -86,7 +86,7 @@ install_deps(){
     fi
 }
 
-banner
+
 pause
 detect_distro
 init_environ
@@ -97,13 +97,13 @@ else
     echo .
     echo .
     install_deps
-    echo This Script Was Made By SpeedX > .update
+    echo This Script Was Made By AMAN > .update
     echo 'Requirements Installed....'
     pause
 fi
 while :
 do
-    banner
+    
     echo -e "\e[4;31m Please Read Instruction Carefully !!! \e[0m"
     echo " "
     echo "Press 1 To  Start SMS  Bomber "
@@ -130,7 +130,7 @@ do
         pause
         exit
     elif [ $ch -eq 5 ];then
-        banner
+        
         exit
     else
         echo -e "\e[4;32m Invalid Input !!! sahi sahi likh \e[0m"
